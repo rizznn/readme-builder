@@ -7,8 +7,16 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
     {
         type: "input",
-        name: "name",
-        message: "What is the name of your project?"
+        name: "title",
+        message: "What is the name of your project?",
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please enter the name of your project');
+                return false;
+            }
+        }
     },
     {
         type: "input",
@@ -67,18 +75,17 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//     fs.writeFile('README.md', fileName, data, err => {
-//     if (err) throw err;
-  
-//     console.log('README.md complete! Check out README.md to see the output!');
-//   });
-// }
+function writeToFile(fileName, data) {
+    fs.writeFileSync(fileName,data)
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-    .then(answers => console.log(answers));
+    .then((answers) => {
+        console.log(answers);
+        writeToFile(`./dist/README_${answers.title}.md`, generateMarkdown(answers));
+    });
 }
 
 // Function call to initialize app
