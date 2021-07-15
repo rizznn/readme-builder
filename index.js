@@ -24,6 +24,12 @@ const questions = [
         message: "Enter a description for your project"
     },
     {
+        type: 'checkbox',
+        name: 'languages',
+        message: 'What did you build this project with? (Check all that apply)',
+        choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+    },
+    {
         type: "input",
         name: "install",
         message: "Enter installation instructions"
@@ -57,19 +63,13 @@ const questions = [
     },
     {
         type: "input",
-        name: "github",
+        name: "username",
         message: "What's your Github username?"
     },
     {
         type: "input",
         name: "email",
         message: "What's your email?"
-    },
-    {
-        type: "input",
-        name: "dependencies",
-        message: "Any dependencies to install?",
-        default: "npm i"    
     }
 
 ];
