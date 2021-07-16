@@ -1,4 +1,4 @@
-# Github link
+# github link
   ![License](https://img.shields.io/badge/license-MIT-blue.svg)
   
   ## Table of Contents:
@@ -12,7 +12,7 @@
   - [License](#license)
 
   ## Description
-  sfs
+  
 
   ## Technologies
   
@@ -33,11 +33,11 @@
   ## Questions
   To reach me for additional questions:
 
-    Github username: rizznn 
+  Github username: rizznn 
 
-    Github link: [Github Link](https://github.com/rizznn) 
+  Github link: [https://github.com/rizznn](https://github.com/rizznn) 
 
-    Email me at rizznn
+  Email me at rizznn
 
   ## License
   

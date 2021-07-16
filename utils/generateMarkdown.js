@@ -74,9 +74,9 @@ function generateMarkdown(data) {
 
   ## Questions
   To reach me for additional questions:\n
-    Github username: ${data.username} \n
-  Github link: [Github Link](https://github.com/${data.username}) \n
-    Email me at ${data.email}
+  Github username: ${data.username} \n
+  Github link: [https://github.com/${data.username}](https://github.com/${data.username}) \n
+  Email me at ${data.email}
 
   ## License
   ${renderLicenseSection(data.license)} \n
