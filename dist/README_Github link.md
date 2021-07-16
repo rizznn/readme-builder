@@ -1,6 +1,5 @@
-# readmebuilder
-  ![Whatev](https://img.shields.io/badge/license-MIT-blue.svg)
-  
+# Github link
+  ![License](https://img.shields.io/badge/license-MIT-blue.svg)
   
   ## Table of Contents:
   - [Description](#description)
@@ -13,32 +12,37 @@
   - [License](#license)
 
   ## Description
-  builds readme/generates
-  
+  sfs
+
   ## Technologies
-  JavaScript,ES6,Node
+  
 
   ## Installation
-  fvdfbdbf
-  dgbfgn
+  
+  
 
   ## Usage
-  fgnfgnfgn
+  
 
   ## Contributing
-  fgnfgn
+  
 
   ## Tests
-  fgnfn
+  npm test
 
   ## Questions
   To reach me for additional questions:
-    Github rizznn https://github.com/rizznn/
-    Email me at rizzel_nolasco17@yahoo.com
+
+    Github username: rizznn 
+
+    Github link: [Github Link](https://github.com/rizznn) 
+
+    Email me at rizznn
 
   ## License
-  ## License
-      Copyright (c) MIT. All rights reserved.
+  
+      Copyright (c) MIT. All rights reserved. 
 
-      Licensed under the MIT license.
+
+  Licensed under the [MIT](https://opensource.org/licenses/MIT) license.
 

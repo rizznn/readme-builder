@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "None") {
-    return `![Whatev](https://img.shields.io/badge/license-${license}-blue.svg)`
+    return `![License](https://img.shields.io/badge/license-${license}-blue.svg)`
   }
   return ''
 }
@@ -10,8 +10,16 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license !== "None") {
-    return `[License](#license)`;
+  if (license === "Boost1.0") {
+    return `[${license}](https://opensource.org/licenses/BSL-1.0)`
+  } else if (license === "GPL3.0") {
+    return `[${license}](https://opensource.org/licenses/gpl-3.0.html)`
+  } else if (license === "BSD2") {
+    return `[${license}](https://opensource.org/licenses/BSD-2-CLause)`
+  } else if (license === "BSD3") {
+    return `[${license}](https://opensource.org/licenses/BSD-3-Clause)`
+  } else if (license !== "None") {
+      return `[${license}](https://opensource.org/licenses/${license})`
   } else {
     return ''
   }
@@ -23,9 +31,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
     if (license !== "None") {
       return `
-      Copyright (c) ${license}. All rights reserved.
-
-      Licensed under the ${license} license.`;
+      Copyright (c) ${license}. All rights reserved.`;
     } else {
       return ''
     }
@@ -36,7 +42,6 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
-  
   
   ## Table of Contents:
   - [Description](#description)
@@ -50,7 +55,7 @@ function generateMarkdown(data) {
 
   ## Description
   ${data.description}
-  
+
   ## Technologies
   ${data.languages}
 
@@ -68,13 +73,15 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## Questions
-  To reach me for additional questions:
-    Github username: ${data.username}
-    Github link: https://github.com/${data.username}/
+  To reach me for additional questions:\n
+    Github username: ${data.username} \n
+  Github link: [Github Link](https://github.com/${data.username}) \n
     Email me at ${data.email}
 
   ## License
-  ${renderLicenseSection(data.license)}
+  ${renderLicenseSection(data.license)} \n
+
+  Licensed under the ${renderLicenseLink(data.license)} license.
 
 `;
 }
