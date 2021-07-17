@@ -9,14 +9,6 @@ const questions = [
         type: "input",
         name: "title",
         message: "What is the name of your project?",
-        validate: nameInput => {
-            if (nameInput) {
-                return true;
-            } else {
-                console.log('Please enter the name of your project');
-                return false;
-            }
-        }
     },
     {
         type: "input",
@@ -27,17 +19,12 @@ const questions = [
         type: 'checkbox',
         name: 'languages',
         message: 'What did you build this project with? (Check all that apply)',
-        choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+        choices: ['HTML', 'CSS', 'JavaScript', 'ES6', 'jQuery', 'Bootstrap', 'Moment', 'Node', 'OOP', 'Express']
     },
     {
         type: "input",
         name: "install",
         message: "Enter installation instructions"
-    },
-    {
-        type: "input",
-        name: "image",
-        message: "Enter your image url (https://github.com/<your-repo>/...)"
     },
     {
         type: "input",
@@ -48,12 +35,6 @@ const questions = [
         type: "input",
         name: "contribute",
         message: "How can others contribute?"
-    },
-    {
-        type: "input",
-        name: "test",
-        message: "How can this code be tested?",
-        default: "npm test"
     },
     {
         type: "list",

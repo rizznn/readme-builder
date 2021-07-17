@@ -19,7 +19,7 @@ function renderLicenseLink(license) {
   } else if (license === "BSD3") {
     return `[${license}](https://opensource.org/licenses/BSD-3-Clause)`
   } else if (license !== "None") {
-      return `[${license}](https://opensource.org/licenses/${license})`
+    return `[${license}](https://opensource.org/licenses/${license})`
   } else {
     return ''
   }
@@ -57,11 +57,10 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Technologies
-  ${data.languages}
+  This website is created with Visual Studio Code using ${data.languages}. Project repo created here in Github.
 
   ## Installation
   ${data.install}
-  ${data.image}
 
   ## Usage
   ${data.usage}
@@ -69,14 +68,11 @@ function generateMarkdown(data) {
   ## Contributing
   ${data.contribute}
 
-  ## Tests
-  ${data.test}
-
   ## Questions
   To reach me for additional questions:\n
   Github username: ${data.username} \n
   Github link: [https://github.com/${data.username}](https://github.com/${data.username}) \n
-  Email me at ${data.email}
+  Email me at [${data.email}](mailto:${data.email})
 
   ## License
   ${renderLicenseSection(data.license)} \n
