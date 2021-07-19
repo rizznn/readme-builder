@@ -8,10 +8,11 @@ This website is created with Visual Studio Code using node.js, JavaScript, ES6. 
 
 ## Installation
 1. Make sure you have node.js installed on your system (if you have node.js, you have npm as well)
-2. Navigate to the directory where you want the repository to be cloned.
+2. Navigate to the directory where you want the repository to be cloned in your terminal.
 3. Clone the repository: in your terminal, `git clone https://github.com/rizznn/readme-builder.git`for https OR `git clone git@github.com:rizznn/readme-builder.git` for ssh
-4. In your terminal: `npm install` to install the npm modules
-5. Then run the app: `node index`
+4. Navigate to the directory of the cloned repository in your terminal.
+5. In your terminal: `npm install` to install the npm modules
+6. Then run the app: `node index.js`
 
 ## Usage
 In your terminal, navigate to your project directory and run `node index`. Fill in the required sections and a `README.md` file will be created on `dist` folder.
